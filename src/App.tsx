@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <h1 className="text-4xl font-bold">Calcul de soldes</h1>
+      <h1>Calcul de soldes</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="price">Entrez le prix de l'article</label>
         <input
