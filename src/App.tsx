@@ -28,7 +28,7 @@ const App = () => {
             setSubmitted(false);
           }}
         />
-        <label htmlFor="sales">Entrez la valeur de la réduction</label>
+        €<label htmlFor="sales">Entrez la valeur de la réduction</label>
         <input
           type="number"
           id="sales"
@@ -37,7 +37,7 @@ const App = () => {
             setSales(parseFloat(e.target.value));
           }}
         />
-        <button type="submit">Calculer</button>
+        %<button type="submit">Calculer</button>
       </form>
 
       {submitted && (
