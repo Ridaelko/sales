@@ -20,12 +20,15 @@ const App = () => {
         <h1 className="  uppercase text-xl font-extrabold">
           Calculez le prix soldé et combien vous économisez
         </h1>
-        <div className="bg-[#95C18C] border-3 rounded-xl w-[745px] h-[485px] mt-20 ">
+        <div className="bg-[#95C18C] border-3 rounded-4xl w-[745px] h-[485px] mt-20 ">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col px-[130px] py-[45px] "
           >
-            <label htmlFor="price" className="uppercase text-lg">
+            <label
+              htmlFor="price"
+              className="uppercase text-[25px] font-medium"
+            >
               Entrez un prix
             </label>
             <input
