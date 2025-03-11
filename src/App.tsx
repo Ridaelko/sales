@@ -17,21 +17,22 @@ const App = () => {
   return (
     <>
       <div className="bg-[#DEFBDC] h-screen flex flex-col justify-center items-center">
-        <h1 className="  uppercase text-xl font-extrabold">
+        <h1 className="  uppercase text-3xl font-extrabold">
           Calculez le prix soldé et combien vous économisez
         </h1>
-        <div className="bg-[#95C18C] border-3 rounded-4xl w-[745px] h-[485px] mt-20 ">
+        <div className="bg-[#95C18C] border-4 rounded-4xl w-[745px] h-[485px] mt-20 ">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col px-[130px] py-[45px] "
+            className="flex flex-col px-[130px] py-[45px]"
           >
             <label
               htmlFor="price"
-              className="uppercase text-[25px] font-medium"
+              className="uppercase text-xl font-medium mb-4"
             >
               Entrez un prix
             </label>
             <input
+              className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3"
               type="number"
               id="price"
               value={price}
@@ -40,8 +41,14 @@ const App = () => {
                 setSubmitted(false);
               }}
             />
-            €<label htmlFor="sales">Entrez la valeur de la réduction</label>
+            <label
+              htmlFor="sales"
+              className="uppercase text-xl font-medium mb-4"
+            >
+              Entrez la valeur de la réduction
+            </label>
             <input
+              className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3"
               type="number"
               id="sales"
               value={sales}
