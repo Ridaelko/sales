@@ -16,37 +16,42 @@ const App = () => {
 
   return (
     <>
-      <h1>Calcul de soldes</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="price">Entrez le prix de l'article</label>
-        <input
-          type="number"
-          id="price"
-          value={price}
-          onChange={(e) => {
-            setPrice(parseFloat(e.target.value));
-            setSubmitted(false);
-          }}
-        />
-        €<label htmlFor="sales">Entrez la valeur de la réduction</label>
-        <input
-          type="number"
-          id="sales"
-          value={sales}
-          onChange={(e) => {
-            setSales(parseFloat(e.target.value));
-          }}
-        />
-        %<button type="submit">Calculer</button>
-      </form>
+      <div>
+        <div>
+          <h1>Calcul de soldes</h1>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="price">Entrez le prix de l'article</label>
+            <input
+              type="number"
+              id="price"
+              value={price}
+              onChange={(e) => {
+                setPrice(parseFloat(e.target.value));
+                setSubmitted(false);
+              }}
+            />
+            €<label htmlFor="sales">Entrez la valeur de la réduction</label>
+            <input
+              type="number"
+              id="sales"
+              value={sales}
+              onChange={(e) => {
+                setSales(parseFloat(e.target.value));
+              }}
+            />
+            %<button type="submit">Calculer</button>
+          </form>
 
-      {submitted && (
-        <p>
-          Votre prix après réduction est{" "}
-          <BalancesCalcul price={price} sales={sales} />
-          €, vous avez économisé <MoneyEarned price={price} sales={sales} />€
-        </p>
-      )}
+          {submitted && (
+            <p>
+              Votre prix après réduction est{" "}
+              <BalancesCalcul price={price} sales={sales} />
+              €, vous avez économisé <MoneyEarned price={price} sales={sales} />
+              €
+            </p>
+          )}
+        </div>
+      </div>
     </>
   );
 };
