@@ -25,7 +25,9 @@ const App = () => {
             onSubmit={handleSubmit}
             className="flex flex-col px-[130px] py-[45px] "
           >
-            <label htmlFor="price">Entrez le prix de l'article</label>
+            <label htmlFor="price" className="uppercase text-lg">
+              Entrez un prix
+            </label>
             <input
               type="number"
               id="price"
