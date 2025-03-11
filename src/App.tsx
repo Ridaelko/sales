@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <div className="bg-[#DEFBDC] h-screen flex flex-col justify-center items-center">
-        <h1 className="  uppercase text-3xl font-extrabold">
+        <h1 className="uppercase text-3xl font-extrabold">
           Calculez le prix soldé et combien vous économisez
         </h1>
         <div className="bg-[#95C18C] border-4 rounded-4xl w-[745px] h-[485px] mt-20 ">
@@ -31,32 +31,43 @@ const App = () => {
             >
               Entrez un prix
             </label>
-            <input
-              className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3"
-              type="number"
-              id="price"
-              value={price}
-              onChange={(e) => {
-                setPrice(parseFloat(e.target.value));
-                setSubmitted(false);
-              }}
-            />
+            <div className="flex">
+              <input
+                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full"
+                type="number"
+                id="price"
+                value={price}
+                onChange={(e) => {
+                  setPrice(parseFloat(e.target.value));
+                  setSubmitted(false);
+                }}
+              />
+              <p className="text-xl">€</p>
+            </div>
             <label
               htmlFor="sales"
               className="uppercase text-xl font-medium mb-4"
             >
               Entrez la valeur de la réduction
             </label>
-            <input
-              className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3"
-              type="number"
-              id="sales"
-              value={sales}
-              onChange={(e) => {
-                setSales(parseFloat(e.target.value));
-              }}
-            />
-            %<button type="submit">Calculer</button>
+            <div className="flex">
+              <input
+                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full"
+                type="number"
+                id="sales"
+                value={sales}
+                onChange={(e) => {
+                  setSales(parseFloat(e.target.value));
+                }}
+              />
+              <p className="text-xl">%</p>
+            </div>
+            <button
+              type="submit"
+              className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-items-center"
+            >
+              Calculer
+            </button>
           </form>
 
           {submitted && (
