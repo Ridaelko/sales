@@ -62,12 +62,14 @@ const App = () => {
               />
               <p className="text-xl">%</p>
             </div>
-            <button
-              type="submit"
-              className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-items-center"
-            >
-              Calculer
-            </button>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-items-center"
+              >
+                Calculer
+              </button>
+            </div>
           </form>
 
           {submitted && (
