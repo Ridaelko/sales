@@ -16,10 +16,15 @@ const App = () => {
 
   return (
     <>
-      <div className="bg-[#DEFBDC] h-screen flex justify-center items-center ">
-        <div>
-          <h1>Calcul de soldes</h1>
-          <form onSubmit={handleSubmit}>
+      <div className="bg-[#DEFBDC] h-screen flex flex-col justify-center items-center">
+        <h1 className="  uppercase text-xl font-extrabold">
+          Calculez le prix soldé et combien vous économisez
+        </h1>
+        <div className="bg-[#95C18C] border-3 rounded-xl w-[745px] h-[485px] mt-20 ">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col px-[130px] py-[45px] "
+          >
             <label htmlFor="price">Entrez le prix de l'article</label>
             <input
               type="number"
