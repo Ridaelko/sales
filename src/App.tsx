@@ -42,7 +42,7 @@ const App = () => {
                   setSubmitted(false);
                 }}
               />
-              <p className="text-xl">€</p>
+              <p className="text-xl text-[#DEFBDC]">€</p>
             </div>
             <label
               htmlFor="sales"
@@ -60,12 +60,12 @@ const App = () => {
                   setSales(parseFloat(e.target.value));
                 }}
               />
-              <p className="text-xl">%</p>
+              <p className="text-xl text-[#DEFBDC]">%</p>
             </div>
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-items-center"
+                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-center"
               >
                 Calculer
               </button>
