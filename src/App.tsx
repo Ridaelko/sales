@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className="bg-[#DEFBDC] h-screen flex justify-center items-center ">
         <div>
           <h1>Calcul de soldes</h1>
           <form onSubmit={handleSubmit}>
