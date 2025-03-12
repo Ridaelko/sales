@@ -60,6 +60,7 @@ const App = () => {
                 value={sales === 0 ? "" : sales}
                 onChange={(e) => {
                   setSales(parseFloat(e.target.value));
+                  setSubmitted(false);
                 }}
               />
               <p className="text-2xl text-primary font-mono ml-2 mt-1">%</p>
