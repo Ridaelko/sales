@@ -33,7 +33,7 @@ const App = () => {
             </label>
             <div className="flex">
               <input
-                className="bg-primary border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono focus:none "
+                className="bg-primary border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono  focus:outline-3 focus:outline-offset-2 focus:outline-primary"
                 type="number"
                 id="price"
                 placeholder="Entrez un prix"
@@ -43,7 +43,7 @@ const App = () => {
                   setSubmitted(false);
                 }}
               />
-              <p className="text-2xl text-primary font-mono ml-1 mt-1">€</p>
+              <p className="text-2xl text-primary font-mono ml-2 mt-1">€</p>
             </div>
             <label
               htmlFor="sales"
@@ -53,7 +53,7 @@ const App = () => {
             </label>
             <div className="flex">
               <input
-                className="bg-primary border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
+                className="bg-primary border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono focus:outline-3 focus:outline-offset-2 focus:outline-primary"
                 type="number"
                 id="sales"
                 placeholder="Entrez la rédution"
@@ -62,7 +62,7 @@ const App = () => {
                   setSales(parseFloat(e.target.value));
                 }}
               />
-              <p className="text-2xl text-primary font-mono ml-1 mt-1">%</p>
+              <p className="text-2xl text-primary font-mono ml-2 mt-1">%</p>
             </div>
             <div className="flex justify-center">
               <button
@@ -76,7 +76,7 @@ const App = () => {
 
           {submitted && (
             <p className="text-primary font-mono text-xl text-center">
-              Votre prix après réduction est{" "}
+              Votre prix après réduction est de{" "}
               <BalancesCalcul price={price} sales={sales} />
               € <br /> Vous avez économisé{" "}
               <MoneyEarned price={price} sales={sales} />€
