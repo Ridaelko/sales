@@ -62,7 +62,7 @@ const App = () => {
                   setSales(parseFloat(e.target.value));
                 }}
               />
-              <p className="text-xl text-[#DEFBDC] font-mono">%</p>
+              <p className="text-2xl text-[#DEFBDC] font-mono ml-1 mt-1">%</p>
             </div>
             <div className="flex justify-center">
               <button
