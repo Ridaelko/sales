@@ -36,7 +36,8 @@ const App = () => {
                 className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
                 type="number"
                 id="price"
-                value={price}
+                placeholder="Entrez un prix"
+                value={price === 0 ? "" : price}
                 onChange={(e) => {
                   setPrice(parseFloat(e.target.value));
                   setSubmitted(false);
