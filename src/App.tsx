@@ -42,7 +42,7 @@ const App = () => {
                   setSubmitted(false);
                 }}
               />
-              <p className="text-xl text-[#DEFBDC]">€</p>
+              <p className="text-xl text-[#DEFBDC] font-mono">€</p>
             </div>
             <label
               htmlFor="sales"
@@ -60,7 +60,7 @@ const App = () => {
                   setSales(parseFloat(e.target.value));
                 }}
               />
-              <p className="text-xl text-[#DEFBDC]">%</p>
+              <p className="text-xl text-[#DEFBDC] font-mono">%</p>
             </div>
             <div className="flex justify-center">
               <button
