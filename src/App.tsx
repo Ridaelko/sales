@@ -75,11 +75,11 @@ const App = () => {
           </form>
 
           {submitted && (
-            <p>
+            <p className="text-[#DEFBDC] font-mono text-lg">
               Votre prix après réduction est{" "}
               <BalancesCalcul price={price} sales={sales} />
-              €, vous avez économisé <MoneyEarned price={price} sales={sales} />
-              €
+              € <br /> Vous avez économisé{" "}
+              <MoneyEarned price={price} sales={sales} />€
             </p>
           )}
         </div>
