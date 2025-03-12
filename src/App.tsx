@@ -43,7 +43,7 @@ const App = () => {
                   setSubmitted(false);
                 }}
               />
-              <p className="text-xl text-[#DEFBDC] font-mono">€</p>
+              <p className="text-2xl text-[#DEFBDC] font-mono ml-1 mt-1">€</p>
             </div>
             <label
               htmlFor="sales"
