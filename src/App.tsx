@@ -33,7 +33,7 @@ const App = () => {
             </label>
             <div className="flex">
               <input
-                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
+                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono focus:none "
                 type="number"
                 id="price"
                 placeholder="Entrez un prix"
@@ -67,7 +67,7 @@ const App = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2 justify-center font-mono"
+                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2 justify-center font-mono hover:bg-gray-600 hover:text-[#DEFBDC]"
               >
                 Calculer
               </button>
