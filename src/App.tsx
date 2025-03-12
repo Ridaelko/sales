@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <div className="bg-[#DEFBDC] h-screen flex flex-col justify-center items-center">
-        <h1 className="uppercase text-3xl font-extrabold">
+        <h1 className="uppercase text-3xl font-extrabold font-mono">
           Calculez le prix soldé et combien vous économisez
         </h1>
         <div className="bg-[#95C18C] border-4 rounded-4xl w-[745px] h-[485px] mt-20 ">
@@ -27,13 +27,13 @@ const App = () => {
           >
             <label
               htmlFor="price"
-              className="uppercase text-xl font-medium mb-4"
+              className="uppercase text-xl font-medium mb-4 font-mono"
             >
               Entrez un prix
             </label>
             <div className="flex">
               <input
-                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full"
+                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
                 type="number"
                 id="price"
                 value={price}
@@ -46,13 +46,13 @@ const App = () => {
             </div>
             <label
               htmlFor="sales"
-              className="uppercase text-xl font-medium mb-4"
+              className="uppercase text-xl font-medium mb-4 font-mono"
             >
               Entrez la valeur de la réduction
             </label>
             <div className="flex">
               <input
-                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full"
+                className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
                 type="number"
                 id="sales"
                 value={sales}
@@ -65,7 +65,7 @@ const App = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-center"
+                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-center font-mono"
               >
                 Calculer
               </button>
