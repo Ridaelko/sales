@@ -67,7 +67,7 @@ const App = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2  justify-center font-mono"
+                className="uppercase border-2 rounded-4xl h-10 bg-[#DEFBDC] font-bold text-lg w-1/2 justify-center font-mono"
               >
                 Calculer
               </button>
@@ -75,7 +75,7 @@ const App = () => {
           </form>
 
           {submitted && (
-            <p className="text-[#DEFBDC] font-mono text-lg">
+            <p className="text-[#DEFBDC] font-mono text-xl text-center">
               Votre prix après réduction est{" "}
               <BalancesCalcul price={price} sales={sales} />
               € <br /> Vous avez économisé{" "}
