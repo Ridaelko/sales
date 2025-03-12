@@ -56,7 +56,8 @@ const App = () => {
                 className="bg-[#DEFBDC] border-2 rounded-4xl h-10 mb-10 pl-3 w-full font-mono"
                 type="number"
                 id="sales"
-                value={sales}
+                placeholder="Entrez la rédution"
+                value={sales === 0 ? "" : sales}
                 onChange={(e) => {
                   setSales(parseFloat(e.target.value));
                 }}
